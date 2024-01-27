@@ -1,6 +1,9 @@
 [background arg="res://dialogic/backgrounds/school/day.png" fade="0.0"]
 You enter the backyard.
 join waifu1 (mad) 1 [animation="Bounce In"]
-waifu1 (mad): The fuck is goin on 'over here.
+waifu1 (angry): The fuck is goin on 'over here.
 waifu1 (sad): Oh, its you.
 waifu1 (happy): Well if thats you then its alright.
+[text_input text="Your name:" var="MCName"]
+mainCharacter: Well hello
+[end_timeline]

@@ -1,4 +1,5 @@
-res://Script/start_node.tscn
-res://Node2D.gd
-res://dialogic/Timelines/Start.dtl
 res://dialogic/Characters/waifu1/waifu1.dch
+res://Script/start_node.tscn
+res://dialogic/Characters/Demon Waifu/character.dch
+res://dialogic/Timelines/Start.dtl
+res://dialogic/Characters/mainCharacter.dch

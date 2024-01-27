@@ -3,4 +3,8 @@
 [ext_resource type="Script" path="res://Node2D.gd" id="1_i2mgd"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="VisualNovel" type="Node2D" parent="."]
 script = ExtResource("1_i2mgd")
+
+[node name="MiniGame" type="Node2D" parent="."]

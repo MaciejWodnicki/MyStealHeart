@@ -22,6 +22,8 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"character": "res://dialogic/Characters/Demon Waifu/character.dch",
+"mainCharacter": "res://dialogic/Characters/mainCharacter.dch",
 "waifu1": "res://dialogic/Characters/waifu1/waifu1.dch"
 }
 directories/dtl_directory={
@@ -30,7 +32,9 @@ directories/dtl_directory={
 glossary/default_case_sensitive=true
 layout/style_list=[]
 layout/default_style=""
-variables={}
+variables={
+"MCName": "John"
+}
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
