@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706381045
+::res://::1706388810
 icon.svg::CompressedTexture2D::426005788954629389::1706375106::1706375119::1::::<><>::
 Node2D.gd::GDScript::-1::1706378085::0::1::::<>Node2D<>::
 ::res://addons/::1706376693
@@ -583,33 +583,37 @@ TimelineResourceSaver.gd::GDScript::-1::1706375283::0::1::::DialogicTimelineForm
 day2png.png::CompressedTexture2D::6930958238955531260::1706377443::1706377856::1::::<><>::
 day.png::CompressedTexture2D::4849984532422670378::1706377434::1706377856::1::::<><>::
 evening.png::CompressedTexture2D::2721409683465977934::1706377425::1706377856::1::::<><>::
-::res://dialogic/Characters/::1706381023
-::res://dialogic/Characters/Demon Waifu/::1706381023
-::res://dialogic/Characters/Demon Waifu/Sprites/::1706381023
+::res://dialogic/Characters/::1706386295
+mainCharacter.dch::Resource::-1::1706386295::0::1::::<><>::
+::res://dialogic/Characters/Demon Waifu/::1706386277
+character.dch::Resource::-1::1706386277::0::1::::<><>::
+::res://dialogic/Characters/Demon Waifu/Sprites/::1706381051
 Demon Waifu placeholder.png::CompressedTexture2D::7398605851254790206::1706381023::1706381051::1::::<><>::
 ::res://dialogic/Characters/NPC/::1706381023
-::res://dialogic/Characters/NPC/Sprites/::1706381023
+::res://dialogic/Characters/NPC/Sprites/::1706381051
 NPC placeholder.png::CompressedTexture2D::5591496201231385014::1706381023::1706381051::1::::<><>::
-::res://dialogic/Characters/waifu1/::1706379290
-waifu1.dch::Resource::-1::1706379290::0::1::::<><>::
+::res://dialogic/Characters/waifu1/::1706381094
+waifu1.dch::Resource::-1::1706381094::0::1::::<><>::
 ::res://dialogic/Characters/waifu1/sprites/::1706377165
 angry.png::CompressedTexture2D::3613565038740400823::1706377119::1706377165::1::::<><>::
 happy.png::CompressedTexture2D::4480527250354327548::1706377112::1706377165::1::::<><>::
 mad.png::CompressedTexture2D::672303552434539279::1706377121::1706377165::1::::<><>::
 sad.png::CompressedTexture2D::4912064581442179331::1706377116::1706377165::1::::<><>::
 ::res://dialogic/Characters/Waifu 2/::1706381023
-::res://dialogic/Characters/Waifu 2/Sprites/::1706381023
+::res://dialogic/Characters/Waifu 2/Sprites/::1706381051
 Waifu 2 angry placeholder.png::CompressedTexture2D::3503533038549140763::1706381023::1706381051::1::::<><>::
 Waifu 2 happy Placeholder.png::CompressedTexture2D::6724255688249118510::1706381023::1706381051::1::::<><>::
 Waifu 2 neutral placeholder.png::CompressedTexture2D::294579362631073345::1706381023::1706381051::1::::<><>::
 Waifu 2 shock placeholder.png::CompressedTexture2D::4906040470854771665::1706381023::1706381051::1::::<><>::
 ::res://dialogic/Characters/Waifu 3/::1706381023
-::res://dialogic/Characters/Waifu 3/Sprites/::1706381023
+::res://dialogic/Characters/Waifu 3/Sprites/::1706381051
 Waifu 3 angry placeholder.png::CompressedTexture2D::8090950990347561544::1706381023::1706381051::1::::<><>::
 Waifu 3 happy placeholder.png::CompressedTexture2D::7609027465318170570::1706381023::1706381051::1::::<><>::
 Waifu 3 neutral placeholder.png::CompressedTexture2D::3767546979413334024::1706381023::1706381051::1::::<><>::
 Waifu 3 shock placeholder.png::CompressedTexture2D::7528959476023681323::1706381023::1706381051::1::::<><>::
-::res://dialogic/Timelines/::1706380994
-Start.dtl::Resource::-1::1706380994::0::1::::<><>::
-::res://Script/::1706378911
-start_node.tscn::PackedScene::1657675172325488675::1706378911::0::1::::<><>::res://Node2D.gd
+::res://dialogic/Timelines/::1706388511
+Start.dtl::Resource::-1::1706388511::0::1::::<><>::
+::res://Menu/::1706388810
+armory_by_lady_dreamart_d8qo4z4-fullview.jpg::CompressedTexture2D::3473961732669988905::1706388786::1706388811::1::::<><>::
+::res://Script/::1706388511
+start_node.tscn::PackedScene::1657675172325488675::1706388511::0::1::::<><>::res://Node2D.gd

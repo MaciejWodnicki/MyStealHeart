@@ -1,10 +1,63 @@
-[gd_scene load_steps=2 format=3 uid="uid://xu8wyddintvf"]
+[gd_scene load_steps=6 format=3 uid="uid://xu8wyddintvf"]
 
+[ext_resource type="Script" path="res://Script/StartingMenu.gd" id="1_1wax6"]
 [ext_resource type="Script" path="res://Node2D.gd" id="1_i2mgd"]
+[ext_resource type="Texture2D" uid="uid://bpq2v3mo23l6p" path="res://Menu/armory_by_lady_dreamart_d8qo4z4-fullview.jpg" id="1_sc25g"]
+[ext_resource type="Script" path="res://Script/MiniGame.gd" id="4_7avuw"]
+
+[sub_resource type="SystemFont" id="SystemFont_73omq"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="StartingMenu" type="Node2D" parent="."]
+position = Vector2(4, 3)
+script = ExtResource("1_1wax6")
+
+[node name="Armory" type="Sprite2D" parent="StartingMenu"]
+
+[node name="ArmoryByLadyDreamartD8Qo4z4-fullview" type="Sprite2D" parent="StartingMenu/Armory"]
+position = Vector2(574, 322)
+scale = Vector2(1.04545, 1.05825)
+texture = ExtResource("1_sc25g")
+
+[node name="Armor1" type="Sprite2D" parent="StartingMenu/Armory"]
+
+[node name="TextEdit" type="TextEdit" parent="StartingMenu/Armory"]
+offset_left = 270.0
+offset_top = 80.0
+offset_right = 901.0
+offset_bottom = 249.0
+theme_override_fonts/font = SubResource("SystemFont_73omq")
+theme_override_font_sizes/font_size = 80
+text = "My Stæl Heart"
+editable = false
+context_menu_enabled = false
+shortcut_keys_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+middle_mouse_paste_enabled = false
+
+[node name="Button" type="Button" parent="StartingMenu/Armory"]
+offset_left = 406.0
+offset_top = 369.0
+offset_right = 737.0
+offset_bottom = 462.0
+text = "Begin"
+
+[node name="Button2" type="Button" parent="StartingMenu/Armory"]
+offset_left = 406.0
+offset_top = 489.0
+offset_right = 737.0
+offset_bottom = 582.0
+text = "Exit"
 
 [node name="VisualNovel" type="Node2D" parent="."]
 script = ExtResource("1_i2mgd")
 
 [node name="MiniGame" type="Node2D" parent="."]
+script = ExtResource("4_7avuw")
+
+[connection signal="pressed" from="StartingMenu/Armory/Button" to="StartingMenu" method="_on_button_pressed"]
+[connection signal="pressed" from="StartingMenu/Armory/Button2" to="StartingMenu" method="_exit_pressed"]
