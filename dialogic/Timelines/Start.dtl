@@ -1,9 +1,50 @@
-[background arg="res://dialogic/backgrounds/school/day.png" fade="0.0"]
-You enter the backyard.
-join waifu1 (mad) 1 [animation="Bounce In"]
-waifu1 (angry): The fuck is goin on 'over here.
-waifu1 (sad): Oh, its you.
-waifu1 (happy): Well if thats you then its alright.
+[background arg="res://dialogic/backgrounds/school/sanctuary rocks.jpg" fade="0.5" transition="Simple Fade"]
+What is your name?
 [text_input text="Your name:" var="MCName"]
-mainCharacter: Well hello
+Rhythmic trotting of your carriage’s horse wakes you up, just as it lulled you to sleep the night before. Granted, the chirping of the birds and light smell of the forest dew is much more pleasant than the stench of civilisation you are accustomed to in Everton. Perhaps this assignment will do your health some good, if nothing else.\
+Of course, you’d prefer instant transportation or flight at least, but such luxuries are afforded only for the high ranking magisters of the Fleurian Conclave. You are but a novice, even after years of dutiful paper-pushing. Nepotism and favoritism still rules supreme it seems.
+Time for grumbling over your employment situation will come later though, perhaps over a mug of ale. Now, you are approaching your destination, the Duffont abbey, and you are on a mission. Umbran lady-knights might have their sacred quest to protect humanity, but you have a quest even more righteous…
+The Order of the Bleeding Thorn was two days late on paying their taxes. And you are here to collect.
+You’re shaken out of your ruminations by the carriage’s sudden stop. The forest outside has been replaced by cold, red bricks of the abbey. Harsh clangs of steel against steel can be heard from within the walls. As you step out of the carriage and straighten out your robe, an older woman in simple monastic robes hurries up to you.
+[background arg="res://dialogic/backgrounds/school/day.png" fade="0.5"]
+join NPC/character 1
+NPC/character: M’lord, m’lord! What a surprise indeed! She speaks, her voice hoarse and out of breath, beads of sweat dripping from her forehead. I… um… I mean, to what do we owe the honor? I don’t believe we were notified that one of the esteemed tax-wizards would be gracing our humble doorstep.
+- Reprimand the woman
+	mainCharacter: Magister of the Fleurian Conclave, not a ‘tax-wizard’ for goddess’ sake. The visit was not announced for a reason, your abbess has been slacking on tax payments.\
+	NPC/character\: Oh! Right, terribly sorry your m’lordship magister sir. She performs a quick, apologetic bow. But… well… I’m afraid that meeting the abbess is… not possible.
+	jump Manama
+- Patiently explain
+	mainCharacter: Not quite ‘esteemed’ good woman, not yet. But regardless, I seek an audience with your abbess. I need to urgently discuss some financial matters.
+	NPC/character: Oh dear… Umbra preserve us… She crosses her hands in a sign of prayer. I’m terribly sorry, but you won’t be able to speak to abbess good sir.
+	jump Manama
+label Manama
+NPC/character: Our dear Madeline, Umbra, watch her soul, is not with us for two days now. She… has been killed. The woman’s voice cracks in grief, small tears appearing in the corners of her eyes.\
+mainCharacter\: Killed?! What happened? Why has the word of this not reached our offices? Your payment date would’ve been promptly delayed.
+NPC/character: She seems a bit taken aback by your unflinching dedication to bureaucracy, but quickly gathers herself. A-apologies m’lord. It has been all so sudden, we’re still in mourning and trying to figure out… well… what really happened.
+NPC/character: You see m’lord, our dear abbess… seems to have been poisoned. We’re not really sure who or what was behind that, we all pray for it to be one big, terrible accident. The thought of a murderer walking among us is almost impossible to believe.
+mainCharacter: Almost?
+NPC/character: Well… I mean… She grows sheepish, turning her eyes away from you. I can’t in truth say that everyone in the abbey gets along, or that no conflicts have ever escalated. But something like this… such a dishonorable, cruel murder… No, I refuse to believe it. There must be a reasonable explanation.
+- Leave the abbey.
+	mainCharacter: Horrible circumstances indeed… Oh well, the end befalls us all eventually. I shall head back to the Conclave, file the appropriate paperwork and extend your payment date by another week. Good luck with your investigation.
+	NPC/character: The woman nods meekly as you step back into the carriage. O-of course m’lord, thank you m’lord. We’ll do our best to pay on time.
+	leave NPC/character
+	[wait time="0.5"]
+	[background arg="res://dialogic/backgrounds/Game Over/Ha ha funny.jpg" fade="0.5"]
+	[end_timeline]
+- Join the investigation.
+	mainCharacter: Vague circumstances for an incident of that caliber… This must be set right. As a magister, I feel obligated to aid this investigation, lady…?
+	NPC/character: Helga m’lord, just Helga. A-are you sure? I wouldn’t want to impose, of course… Even though we could use some help, in all fairness. Our girls are more than capable of swinging a sword, but… um… lack in the subtlety department, so to say.
+	jump Continue
+label Continue
+mainCharacter: Understood. Could I see the scene of the crime? And mind telling me what position you hold within the order?
+NPC/character: Yes, of course, after me please. Helga gestures, as she leads the way further into the abbey. Well, I’m Helga. I’m the oldest sister in the order now, always doing this and that, so I’m trying to keep things together until Madeline’s death is explained and we can elect a new abbess properly.
+mainCharacter: So even if we solve this, there will be a transition of power… Great, more paperwork. You sigh, dreading the stacks of parchments that await you.
+mainCharacter: As you walk through the halls of the scarcely decorated abbey, you notice knights of the order coming and going according to their duties. Clad in full plate armor and wielding all manner of weaponry, they are a wonder to behold. Which brings another question to the forefront of your mind. Which sisters did the abbess spend the most time with?
+NPC/character: Hmm, well, she was a bit of a reclusive sort, liked her privacy. But I suppose she had the most contact with Amelia, Elenn and Rose. Helga then turns to you in horror. Y-you don’t think they… they were behind this?!
+mainCharacter: We can’t rule out the possibility. Can I meet them?
+NPC/character: Yes, of course, if you think that’s necessary. We’ll go a different route then, we should catch them at their posts. The woman then takes a sharp turn, heading back out into the courtyard. She then struts up to a large armored knight, who is currently savagely chopping a training mannequin with a greataxe.\
+NPC/character\: That… um, that’s our dear Rose. Helga says as she comes closer to the knight, whispering to you conspiratorially. She has her own ways of dealing with loss, just… be patient with her please.
+join waifu1/character (Angry) 3 [animation="Instant In Or Out"]
+waifu1/character: The knight turns quickly as you both approach, her stance low and battle-ready. She scans you both through the slits in her helmet, relaxing only slightly before barking out. The fuck ya want? An’ who’s this fuckin dandy?
+NPC/character: Rosa! Show some respect! Helga blurts out, a blush covering her face.
 [end_timeline]

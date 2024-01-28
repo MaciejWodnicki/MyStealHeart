@@ -22,11 +22,14 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"NPC/character": "res://dialogic/Characters/NPC/character.dch",
 "character": "res://dialogic/Characters/Demon Waifu/character.dch",
 "mainCharacter": "res://dialogic/Characters/mainCharacter.dch",
-"waifu1": "res://dialogic/Characters/waifu1/waifu1.dch"
+"waifu1": "res://dialogic/Characters/waifu1/waifu1.dch",
+"waifu1/character": "res://dialogic/Characters/waifu1/character.dch"
 }
 directories/dtl_directory={
+"End Timline": "res://dialogic/Characters/waifu1/sprites/End Timline.dtl",
 "Start": "res://dialogic/Timelines/Start.dtl"
 }
 glossary/default_case_sensitive=true
